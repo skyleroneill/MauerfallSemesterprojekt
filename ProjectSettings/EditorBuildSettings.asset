@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/TestRats.unity
+    guid: 5238d5464820cdb4a905dd02a623f8cd
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/TestBots.unity
+    guid: cbba9049ff29d6d4fb3167e21c6537fd
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/TestMutants.unity
+    guid: 2c62ca0855574db4cac66ad7e4367ddd
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/TestMutantKing.unity
+    guid: 5884fa99dec1b0d47b23899dc99d9dde
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/TestLevel.unity
+    guid: 37f6c7ebdab1a4b479221a759b5349c4
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/PresentationScenes/StartRoom.unity
+    guid: 2ad21d97183296e4aaf96476b2cc8bef
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/PresentationScenes/MutantVillage.unity
+    guid: c3549dbb565b66d43aadce2743b29ab2
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/PresentationScenes/NPCShowCase.unity
+    guid: 8aa687639910abc4392a8c08aba6ca6a
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/PresentationScenes/RatRoom.unity
+    guid: 6aca95ac27efd7e4db1c7ca7f92bd2d3
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/PresentationScenes/BotRoom.unity
+    guid: 204c10e77c151db48843ab0279083d05
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/PresentationScenes/MutantRoom.unity
+    guid: 420b0ecf56b35154bb9457010437a359
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/PresentationScenes/EndRoom.unity
+    guid: 23b62435fa6dc9f41a3f3e06c1b7e59e
+  - enabled: 0
+    path: Assets/Scenes/SludgerScenes/PresentationScenes/KingRoom.unity
+    guid: 6a4d47e91d3230443ad3e74ac55ea1e7
+  - enabled: 1
+    path: Assets/Scenes/EastSideGallery.unity
+    guid: 78d8d5d71f5d02a4fb75d5f119a7d78c
+  m_configObjects: {}

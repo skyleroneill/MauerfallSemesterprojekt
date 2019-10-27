@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Irina Dubrovskaja - Die Wand muss weichen, wenn der Meteorit der Liebe kommt
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

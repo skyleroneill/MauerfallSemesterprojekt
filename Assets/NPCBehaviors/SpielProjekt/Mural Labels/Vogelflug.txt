@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Jeanett Kipka - Vogelflug
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

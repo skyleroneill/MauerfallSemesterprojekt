@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Lance Keller - Brandenburger Tor
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

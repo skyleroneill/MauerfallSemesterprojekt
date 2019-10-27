@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Marc Engel - Marionetten eines abgesetzten Stücks
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

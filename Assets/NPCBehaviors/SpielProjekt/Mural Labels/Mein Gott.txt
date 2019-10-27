@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Dimitri Vrubel - Mein Gott hilf mir, diese tödliche Liebe zu überleben
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

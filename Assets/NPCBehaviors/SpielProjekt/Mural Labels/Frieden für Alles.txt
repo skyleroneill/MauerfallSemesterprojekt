@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Ursula Wünsch - Frieden für Alles
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

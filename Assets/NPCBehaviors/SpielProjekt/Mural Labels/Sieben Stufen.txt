@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Narenda Kumar Jain - Sieben Stufen der Erleuchtung
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

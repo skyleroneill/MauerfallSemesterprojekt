@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Fulvio Pinna - Ode an die Freude
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

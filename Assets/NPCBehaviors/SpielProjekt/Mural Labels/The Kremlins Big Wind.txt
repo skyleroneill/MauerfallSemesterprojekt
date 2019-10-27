@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Theodor Cheslav Tezhik - The Big Kremlins Wind
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

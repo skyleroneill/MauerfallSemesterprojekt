@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Ditmar Reiter - ohne Titel
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

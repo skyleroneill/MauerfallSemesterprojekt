@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Michail Serebrjakov - Diagonale Lösung
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

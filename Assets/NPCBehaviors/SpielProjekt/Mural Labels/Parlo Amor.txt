@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Ignasi Blanch - Parlo D´Amor
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

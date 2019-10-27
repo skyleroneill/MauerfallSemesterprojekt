@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Muriel Raoux - Le Yeux Ouvert
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

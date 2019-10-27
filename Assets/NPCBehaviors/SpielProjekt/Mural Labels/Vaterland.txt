@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Günther Schäfer - Vaterland
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

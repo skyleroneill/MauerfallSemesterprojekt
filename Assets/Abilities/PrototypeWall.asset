@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f40803fc22a6f4e825bfadfe8f7173, type: 3}
+  m_Name: PrototypeWall
+  m_EditorClassIdentifier: 
+  debug: 0
+  cost: 5
+  cooldown: 5
+  animationParameter: 
+  spawn: {fileID: 4076937138757903057, guid: 6a645985f4779ee478bc93108fd13bbb, type: 3}
+  spawnDistance: 1
+  rotateToPlayerAimDirection: 1

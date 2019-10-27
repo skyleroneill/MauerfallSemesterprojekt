@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Rosemarie Schinzler - Wachsen lassen
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

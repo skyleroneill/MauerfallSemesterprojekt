@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say Jens-Helge Dahmen - Pneumohumanoiden
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF

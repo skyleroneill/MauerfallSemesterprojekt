@@ -1,0 +1,6 @@
+IF distToTarget < 2.5
+    talk say André Sécrit - Du hast gelernt, was Freiheit heisst..
+ENDIF
+IF distToTarget >= 2.5
+    talk silence
+ENDIF
