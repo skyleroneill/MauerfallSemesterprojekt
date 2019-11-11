@@ -1,0 +1,8 @@
+IF inConversation
+    move stop true
+ENDIF
+IF notInConversation
+    move pathingSpeed 2
+    move stop false
+    move path true
+ENDIF

@@ -49,15 +49,17 @@ public class NPCAim : MonoBehaviour
 
         if(overrideAim){
             return;
-        }else if(trackTarget)
+        }else if(trackTarget){
             TargetAim();
+        }
         else
             IdleAim();
     }
 
     private void TargetAim(){
-        Vector3 newDir = (ot.GetCurrentTarget().transform.position - transform.position).normalized;
+        Vector3 newDir = (ot.GetCurrentTarget().transform.position - transform.position).WithY(0f).normalized;
         aimDir = Vector3.Slerp(aimDir, newDir, interpolant).WithY(0f);
+        if(debug) Debug.Log("Target direction: " + newDir);
     }
 
     private void IdleAim(){

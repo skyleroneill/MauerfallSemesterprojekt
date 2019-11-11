@@ -1,0 +1,37 @@
+IF inConversation
+    move stop true
+    target index 0
+ENDIF
+IF notInConversation
+    IF currentTarget == 0
+        target index 1
+    ENDIF
+    move pathingSpeed 2
+    move stop false
+    move path true
+    move destination target
+ENDIF
+IF distToTarget < 0.25
+    IF currentTarget == 1
+        move stop true
+        target index 0
+        wait 5
+        IF notInConversation
+            target index 2
+            move stop false
+            move destination target
+        ENDIF
+    ENDIF 
+ENDIF
+IF distToTarget < 0.25
+    IF currentTarget == 2
+        move stop true
+        target index 0
+        wait 5
+        IF notInConversation
+            target index 1
+            move stop false
+            move destination target
+        ENDIF
+    ENDIF 
+ENDIF

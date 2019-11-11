@@ -18,14 +18,19 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("If speed is less than or equal to this value then snap to zero speed.")]
     [SerializeField]
     private float snapToZeroThreshold = 0.05f;
-    [Tooltip("The maximum speed the player can achieve.")]
+    [Tooltip("The maximum speed the player can walk.")]
     [SerializeField]
-    private float maxSpeed = 1f;
+    private float maxWalkSpeed = 1f;
+    [Tooltip("The maximum speed the player can run.")]
+    [SerializeField]
+    private float maxRunSpeed = 1f;
     [Tooltip("The minimum input threshold. If the input received from the stick is smaller than this value, it’s ignored.")]
     [SerializeField]
     [Range (0f, 1f)]
     private float deadZone = 0.15f;
 
+
+    private float maxSpeed = 1f;
     private float xInput = 0f;
     private float zInput = 0f;
     private Vector3 dir; // The direction of the movement
@@ -39,10 +44,12 @@ public class PlayerMovement : MonoBehaviour
     private float burstDuration = 0f; // Time in seconds for the burst
     private float burstTimer = 0f; // Timer used to time how long a burst has occurred
     private Vector3 burstDir; // The direction of the burst force
+    private bool isRunning = false;
 
     private void Start(){
         dir = new Vector3(0f, 0f, 0f);
         rb = GetComponent<Rigidbody>();
+        maxSpeed = maxWalkSpeed;
     }
 
     private void Update(){
@@ -54,6 +61,15 @@ public class PlayerMovement : MonoBehaviour
 
         if(debug){
             Debug.Log("Input direction: " + dir);
+        }
+
+        if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)){
+            maxSpeed = maxRunSpeed;
+            isRunning = true;
+        }
+        else{
+            maxSpeed = maxWalkSpeed;
+            isRunning = false;
         }
     }
 
@@ -192,5 +208,9 @@ public class PlayerMovement : MonoBehaviour
 
         burstTimer = 0f;
         burst = true;
+    }
+
+    public bool IsRunning(){
+        return isRunning;
     }
 }

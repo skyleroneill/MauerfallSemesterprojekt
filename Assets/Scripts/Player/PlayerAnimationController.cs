@@ -92,6 +92,7 @@ public class PlayerAnimationController : MonoBehaviour
 
     private void SetMoving(){
         aniCon.SetBool("moving",pMove.IsMoving());
+        aniCon.SetBool("running",pMove.IsRunning());
 
         if(pMove.GetMoveDirection() != Vector3.zero)
             moveDir = Quaternion.LookRotation(pMove.GetMoveDirection());

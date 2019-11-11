@@ -45,6 +45,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SludgerScenes/PresentationScenes/KingRoom.unity
     guid: 6a4d47e91d3230443ad3e74ac55ea1e7
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: ffbbf8d8eaf07f344908f46defe264e1
+  - enabled: 1
+    path: Assets/Scenes/BrandenburgTor.unity
+    guid: 94215d23cd5ac224092b5ffcebc6d724
+  - enabled: 1
     path: Assets/Scenes/EastSideGallery.unity
     guid: 78d8d5d71f5d02a4fb75d5f119a7d78c
   m_configObjects: {}

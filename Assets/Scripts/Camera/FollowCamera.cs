@@ -29,6 +29,7 @@ public class FollowCamera : MonoBehaviour
     }
 
     public void SetTarget(Transform newTarget){
+        Debug.Log("New target: " + newTarget.gameObject.name);
         target = newTarget;
     }
 

@@ -1,0 +1,7 @@
+move stop true
+IF inConversation
+    target index 0
+ENDIF
+IF notInConversation
+    target index 1
+ENDIF
